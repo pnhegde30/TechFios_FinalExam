@@ -9,7 +9,7 @@ public class ReadFile {
 		
 		doesFileExist();
 		try {
-			Path path = Paths.get("C:\\Users\\ncheg\\eclipse-workspace\\FinalExam\\docs\\TestDocument.docx");
+			Path path = Paths.get("C:\\Users\\ncheg\\eclipse-workspace\\FinalExam\\docs\\Words");
 			
 			//call toFile() to get File object from path 
 			File obj = path.toFile();
@@ -29,7 +29,7 @@ public class ReadFile {
 	
 	public static void doesFileExist() {
 		//create object of Path
-		Path path = Paths.get("C:\\Users\\ncheg\\eclipse-workspace\\FinalExam\\docs\\TestDocument.docx");
+		Path path = Paths.get("C:\\Users\\ncheg\\eclipse-workspace\\FinalExam\\docs\\Words");
 				
 		//call toFile() to get File object from path 
 		File file = path.toFile();
@@ -42,9 +42,11 @@ public class ReadFile {
 			System.out.println("Readable: " + file.canRead());
 			System.out.println("File size in bytes: " + file.length());
 			System.out.println("File exists!");
+			System.out.println("-----------------------------------------");
 			}
 		else {
 			System.out.println("The file does not exist!");
+			System.out.println("-----------------------------------------");
 			 }
 	}
 	
